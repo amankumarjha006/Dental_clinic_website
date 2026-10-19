@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us &amp; Meet Dr. Elena Rostova | Aura Dental Studio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#ffd1b8",
+            "surface-container": "#def2ee",
+            "on-primary-fixed": "#00201d",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#f9b892",
+            "surface-bright": "#eafdfa",
+            "outline-variant": "#bec9c6",
+            "on-secondary-fixed": "#00201e",
+            "surface-container-highest": "#d3e7e3",
+            "surface-variant": "#d3e7e3",
+            "inverse-primary": "#87d4cb",
+            "surface": "#eafdfa",
+            "primary-fixed-dim": "#87d4cb",
+            "surface-tint": "#0f6a63",
+            "on-secondary-container": "#446966",
+            "on-secondary-fixed-variant": "#284d4a",
+            "secondary": "#406561",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#233432",
+            "primary-fixed": "#a3f1e7",
+            "on-error": "#ffffff",
+            "surface-container-high": "#d9ece9",
+            "background": "#eafdfa",
+            "secondary-container": "#c0e8e3",
+            "on-surface-variant": "#3f4947",
+            "primary-container": "#126b64",
+            "on-background": "#0d1e1d",
+            "outline": "#6f7977",
+            "secondary-fixed": "#c3eae6",
+            "on-secondary": "#ffffff",
+            "on-surface": "#0d1e1d",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#e1f5f1",
+            "tertiary": "#6a3d20",
+            "tertiary-container": "#855435",
+            "secondary-fixed-dim": "#a7ceca",
+            "on-tertiary-fixed-variant": "#683c1f",
+            "on-tertiary-fixed": "#321200",
+            "on-primary-fixed-variant": "#00504a",
+            "surface-dim": "#cbdedb",
+            "surface-container-low": "#e4f8f4",
+            "primary": "#00514c",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdbc8",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#9be9df"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "space-lg": "2rem",
+            "space-md": "1.25rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "body-md": ["Manrope"],
+            "eyebrow": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "headline-lg-mobile": ["Manrope"],
+            "label-md": ["Manrope"],
+            "headline-xl": ["Manrope"],
+            "headline-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "headline-sm": ["Manrope"],
+            "headline-lg": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "headline-xl-mobile": ["Manrope"]
+          },
+          "fontSize": {
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "eyebrow": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-xl": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-low text-on-surface font-body-md antialiased pb-24 selection:bg-secondary-container selection:text-primary">
+<!-- Shared TopAppBar (Mobile view with Back and Menu trigger) -->
+<header class="fixed top-0 left-0 w-full z-40 flex justify-between items-center px-gutter-mobile h-16 bg-surface-container-lowest dark:bg-inverse-surface shadow-sm dark:shadow-none">
+<div class="flex items-center gap-2">
+<button aria-label="Go back" class="p-2 -ml-2 rounded-lg text-primary hover:bg-surface-container transition-colors duration-200 active:scale-95 flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+<button aria-label="Open Navigation Menu" class="p-2 rounded-lg text-primary hover:bg-surface-container transition-colors duration-200 active:scale-95 flex items-center justify-center" id="drawerOpenBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-semibold tracking-tight">Aura Dental</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md active:scale-98 transition-all duration-150 hover:bg-primary shadow-sm" type="button">
+        Book
+      </button>
+</div>
+</header>
+<!-- Slide-out Navigation Drawer matching Shared Components JSON -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="drawerOverlay"></div>
+<aside class="fixed inset-y-0 left-0 w-72 z-50 bg-surface-container-lowest dark:bg-inverse-surface border-r border-outline-variant shadow-xl -translate-x-full transition-transform duration-300 flex flex-col h-full p-4 overflow-y-auto" id="sideNavDrawer">
+<div class="flex items-center justify-between pb-4 mb-2 border-b border-outline-variant">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-semibold">Aura Dental Studio</span>
+<button aria-label="Close menu" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container" id="drawerCloseBtn" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-1.5 flex-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-md font-label-md">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="text-label-md font-label-md">Treatments</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-container-low dark:bg-surface-container text-primary dark:text-inverse-primary font-semibold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="text-label-md font-label-md">About Us</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-md font-label-md">Dentist Profile</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">clinical_notes</span>
+<span class="text-label-md font-label-md">Patient Info</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-label-md font-label-md">Contact &amp; Hours</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-outline-variant text-center">
+<p class="text-body-sm font-body-sm text-on-surface-variant">Gentle &amp; Mindful Dentistry</p>
+</div>
+</aside>
+<!-- Main Content Container (Mobile Framed Flow) -->
+<main class="pt-20 px-margin-mobile flex flex-col gap-8 max-w-xl mx-auto">
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant pt-1">
+<a class="hover:text-primary transition-colors duration-150" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span aria-current="page" class="text-primary font-semibold">About &amp; Dentist Profile</span>
+</nav>
+<!-- Editorial Hero Section -->
+<section class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary border border-secondary-container">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-primary">CLINICAL EXCELLENCE &amp; EMPATHY</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">
+        Redefining the Dental Experience with Calm and Clarity
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        A tranquil architectural sanctuary created to eliminate procedural apprehension through transparent clinical dialogue, restorative pacing, and uncompromised medical rigor.
+      </p>
+<!-- Atmospheric Ambient Highlight Tile -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant p-4 shadow-sm mt-4">
+<div class="flex items-start gap-3.5">
+<div class="p-2.5 rounded-xl bg-surface-container text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">The Sanctuary Benchmark</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Designed as an urban refuge where medical rigor converges with quiet hospitality, setting a new standard for modern oral wellness.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Clinic Philosophy & Story -->
+<section class="space-y-4">
+<div class="border-l-2 border-primary pl-4">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block">Our Genesis</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-1">Unhurried Consultations. True Autonomy.</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant shadow-sm space-y-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Aura Dental Studio originated from a singular observation: modern healthcare too frequently trades compassionate listening for high patient turnover. Traditional clinical spaces often induce involuntary fight-or-flight reactions before an examination even begins.
+        </p>
+<div class="grid grid-cols-1 gap-3 pt-2">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-xl">timer</span>
+<span class="font-label-md text-label-md text-on-surface">60-minute initial diagnostic consultations</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-xl">hearing</span>
+<span class="font-label-md text-label-md text-on-surface">Acoustic dampening with soft organic materials</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-xl">pan_tool</span>
+<span class="font-label-md text-label-md text-on-surface">Full stop hand gestures honored unconditionally</span>
+</div>
+</div>
+</div>
+</section>
+<!-- In-Depth Profile: Dr. Elena Rostova -->
+<section class="space-y-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-wider block">Lead Clinician</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Dr. Elena Rostova, DDS, FAGD</h2>
+</div>
+</div>
+<!-- Provider Bio Card -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant shadow-sm overflow-hidden">
+<!-- Portrait Image presentation -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover object-top" data-alt="An elegant, modern portrait of Dr. Elena Rostova in serene clinical attire standing within a warm, naturally lit dental wellness studio. The composition emphasizes calm authority and warmth, with soft sage green and warm neutral interior architectural finishes blurred gracefully in the background. Natural morning sunlight softly illuminates her face, expressing empathetic professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeE54bIbH1b3K_b86fK9771SovZjWKFxIJTwoAGc1Q93_hgMTGxJ53uEpQprgFZ9CRyPL0eDCFjXmU0dd7jcyaq8DTGrYkVPqw-IoZpkRX6FiFVRVYM20Kgd1TIkQ3viVY7HZvNkhfmzGtgDpLlbuT0m5BkqkXMyvknLUq-YeNE9sKQFyR7dhYhlEXp1w30BWgHoYO77MWZRPPNYFddur6xnc1l39YB3me4JHkbeBx7s5wNctVU1Yh"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Accepting New Patients</span>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<!-- Verified Credentials Chips -->
+<div class="space-y-2">
+<span class="font-eyebrow text-eyebrow text-outline uppercase tracking-wider block">Verified Credentials &amp; Honors</span>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold border border-secondary-container">
+<span class="material-symbols-outlined text-[14px]">school</span>
+                Univ. of Pennsylvania School of Dental Medicine
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold border border-secondary-container">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span>
+                Fellow, Academy of General Dentistry (FAGD)
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm border border-outline-variant">
+                Active ADA &amp; AACD Member
+              </span>
+</div>
+</div>
+<!-- Personal Philosophy Quote -->
+<blockquote class="p-4 rounded-xl bg-surface-container-low border-l-4 border-tertiary-container relative">
+<span class="material-symbols-outlined text-tertiary-container/40 absolute top-2 right-2 text-3xl">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface italic relative z-10">
+              "We believe dentistry should never feel intimidating. We explain every option thoroughly so you remain in full control of your oral health."
+            </p>
+<footer class="mt-2 text-right">
+<cite class="font-label-sm text-label-sm font-semibold text-tertiary not-italic">— Dr. Elena Rostova</cite>
+</footer>
+</blockquote>
+<!-- Clinical Focus Areas (Bento-style 3-card mini array) -->
+<div class="space-y-2 pt-1">
+<span class="font-eyebrow text-eyebrow text-outline uppercase tracking-wider block">Clinical Focus &amp; Mastery</span>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">auto_awesome</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Restorative Aesthetics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Minimally invasive composite bonding, ceramic inlays, and biomimetic veneers.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">psychology</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Anxiety Mitigation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Specialized sedation modalities, sensory recalibration, and deliberate pacing.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">biotech</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Biomimetic Dentistry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preserving natural tooth morphology and healthy tissue with conservative restorations.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Continuing Education & Hospital Background -->
+<div class="p-4 rounded-xl bg-surface-container border border-outline-variant text-on-surface-variant text-body-sm font-body-sm space-y-2">
+<div class="flex items-center gap-2 font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+<span>Hospital Residency &amp; Ongoing Training</span>
+</div>
+<p>
+              Dr. Rostova concluded her rigorous General Practice Residency at Mount Sinai Medical Center in New York, managing complex maxillofacial trauma and medically compromised patients. She dedicates over 150 hours annually to continuing clinical education.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Studio Sanctuary Architecture -->
+<section class="space-y-4">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block">Environment as Medicine</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">The Studio Sanctuary</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Every physical element in Aura Dental Studio has been deliberately curated to calm autonomic nervous system responses.
+        </p>
+</div>
+<!-- Sanctuary Feature Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Tile 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-2xl">air</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Medical HEPA Filtration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous clean air exchanges with quiet laminar airflow.</p>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-2xl">headphones</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Acoustic Noise Control</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sound-baffled treatment rooms isolating mechanical frequencies.</p>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-2xl">chair</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Memory Foam Chairs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ergonomic body-cradling foam alleviating lumbar tension.</p>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-2xl">nature</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Zero Clinical Odor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Organic botanical notes replacing sterile antiseptic scents.</p>
+</div>
+</div>
+</div>
+<!-- Banner feature: Private consultation suite -->
+<div class="p-4 rounded-2xl bg-surface-container border border-outline-variant flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Private Consultation Suite</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Discuss options upright at a warm wooden desk before ever sitting in a procedural operatory.
+          </p>
+</div>
+</div>
+</section>
+<!-- Studio Values Bento Grid -->
+<section class="space-y-4">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block">Principles</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Values That Guide Our Touch</h2>
+</div>
+<div class="space-y-3">
+<!-- Value 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">hourglass_empty</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mindful Pacing</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            We never double-book appointments. Your reserved hour belongs completely to you, with uninterrupted time to breathe, discuss, and evaluate comfortably.
+          </p>
+</div>
+<!-- Value 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">receipt_long</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Radical Price Transparency</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Every procedure is priced clearly before treatment begins. No surprise copays, no confusing jargon, and full disclosure of all tier alternatives.
+          </p>
+</div>
+<!-- Value 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">science</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Evidence-Based Medicine</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            We prioritize modern non-invasive interventions and biomimetic bonding that safeguard natural tooth structure based on peer-reviewed clinical research.
+          </p>
+</div>
+<!-- Value 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">sentiment_satisfied</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Total Comfort Protocol</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            From noise-cancelling Bose headphones with customizable ambient audio to weighted linen lap blankets and warmed facial moist towelettes post-visit.
+          </p>
+</div>
+</div>
+</section>
+<!-- Patient Testimonial Spotlight -->
+<section class="space-y-4">
+<div class="p-6 rounded-2xl bg-primary text-on-primary shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-surface-tint rounded-full opacity-30 pointer-events-none"></div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-primary leading-relaxed relative z-10">
+          "I had avoided the dentist for nearly seven years due to severe dental phobia. Dr. Elena did not judge me for a second. She stopped whenever I raised my finger and talked me through each micro-step. For the first time in my adult life, I left a dental clinic completely relaxed."
+        </blockquote>
+<div class="mt-4 pt-4 border-t border-on-primary/20 flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md font-semibold text-primary-fixed">Claire Montgomery</p>
+<p class="font-label-sm text-label-sm text-on-primary/70">Patient since 2022 • Restorative Care</p>
+</div>
+<span class="material-symbols-outlined text-primary-fixed text-2xl">verified_user</span>
+</div>
+</div>
+</section>
+<!-- Final Direct CTA Section -->
+<section class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant shadow-sm text-center space-y-4 mb-4">
+<div class="w-12 h-12 mx-auto rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">calendar_today</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Experience Restorative Dentistry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">
+        Reserve an unhurried, comprehensive initial examination with Dr. Elena Rostova. Your journey begins with a relaxed conversation.
+      </p>
+<div class="flex flex-col gap-2.5 pt-2">
+<button class="w-full py-3.5 px-6 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary active:scale-98 transition-all shadow-sm" type="button">
+          Book Consultation with Dr. Elena
+        </button>
+<button class="w-full py-3 px-6 rounded-xl bg-surface-container-low text-primary border border-outline-variant font-label-md text-label-md hover:bg-surface-container active:scale-98 transition-all" type="button">
+          Call Studio (212) 555-0198
+        </button>
+</div>
+<div class="flex items-center justify-center gap-4 pt-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+          No rushed appointments
+        </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+          Clear upfront fee schedule
+        </span>
+</div>
+</section>
+</main>
+<!-- Shared Footer matching JSON specifications -->
+<footer class="w-full py-8 px-gutter-mobile flex flex-col gap-4 max-w-7xl mx-auto border-t border-outline-variant bg-surface-container dark:bg-inverse-surface mt-10">
+<div class="flex flex-col gap-2">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-semibold">Aura Dental Studio</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant">
+        © 2024 Aura Dental Studio. All rights reserved. Gentle &amp; Mindful Dentistry.
+      </p>
+</div>
+<ul class="flex flex-wrap gap-x-4 gap-y-2 text-label-sm font-label-sm pt-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Emergency Care</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Consultation Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Insurance &amp; Billing</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Directions</a></li>
+</ul>
+</footer>
+<!-- Fixed Bottom Navigation Bar matching Shared Components JSON -->
+<!-- Semantic tab logic: 'About Us & Profile' maps closest to the primary ecosystem destinations -->
+<nav aria-label="Mobile Navigation" class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-gutter-mobile bg-surface-container-lowest dark:bg-inverse-surface shadow-md dark:shadow-none">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary dark:hover:text-inverse-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-[22px]">home</span>
+<span class="text-label-sm font-label-sm mt-0.5">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary dark:hover:text-inverse-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-[22px]">dentistry</span>
+<span class="text-label-sm font-label-sm mt-0.5">Treatments</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary dark:hover:text-inverse-primary active:scale-95 transition-transform duration-150" href="tel:+12125550198">
+<span class="material-symbols-outlined text-[22px]">call</span>
+<span class="text-label-sm font-label-sm mt-0.5">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold py-1 hover:text-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5">Book</span>
+</a>
+</nav>
+<!-- Interactive JavaScript for Side Navigation Drawer Toggle -->
+<script>
+    const drawerOpenBtn = document.getElementById('drawerOpenBtn');
+    const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const sideNavDrawer = document.getElementById('sideNavDrawer');
+
+    function openDrawer() {
+      drawerOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        drawerOverlay.classList.remove('opacity-0');
+        sideNavDrawer.classList.remove('-translate-x-full');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawerOverlay.classList.add('opacity-0');
+      sideNavDrawer.classList.add('-translate-x-full');
+      setTimeout(() => {
+        drawerOverlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    if (drawerOpenBtn) drawerOpenBtn.addEventListener('click', openDrawer);
+    if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+    if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+  </script>
+</body></html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Dental Studio | Contact &amp; Emergency Care</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#ffd1b8",
+            "surface-container": "#def2ee",
+            "on-primary-fixed": "#00201d",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#f9b892",
+            "surface-bright": "#eafdfa",
+            "outline-variant": "#bec9c6",
+            "on-secondary-fixed": "#00201e",
+            "surface-container-highest": "#d3e7e3",
+            "surface-variant": "#d3e7e3",
+            "inverse-primary": "#87d4cb",
+            "surface": "#eafdfa",
+            "primary-fixed-dim": "#87d4cb",
+            "surface-tint": "#0f6a63",
+            "on-secondary-container": "#446966",
+            "on-secondary-fixed-variant": "#284d4a",
+            "secondary": "#406561",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#233432",
+            "primary-fixed": "#a3f1e7",
+            "on-error": "#ffffff",
+            "surface-container-high": "#d9ece9",
+            "background": "#eafdfa",
+            "secondary-container": "#c0e8e3",
+            "on-surface-variant": "#3f4947",
+            "primary-container": "#126b64",
+            "on-background": "#0d1e1d",
+            "outline": "#6f7977",
+            "secondary-fixed": "#c3eae6",
+            "on-secondary": "#ffffff",
+            "on-surface": "#0d1e1d",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#e1f5f1",
+            "tertiary": "#6a3d20",
+            "tertiary-container": "#855435",
+            "secondary-fixed-dim": "#a7ceca",
+            "on-tertiary-fixed-variant": "#683c1f",
+            "on-tertiary-fixed": "#321200",
+            "on-primary-fixed-variant": "#00504a",
+            "surface-dim": "#cbdedb",
+            "surface-container-low": "#e4f8f4",
+            "primary": "#00514c",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdbc8",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#9be9df"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "space-lg": "2rem",
+            "space-md": "1.25rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "body-md": ["Manrope"],
+            "eyebrow": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "headline-lg-mobile": ["Manrope"],
+            "label-md": ["Manrope"],
+            "headline-xl": ["Manrope"],
+            "headline-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "headline-sm": ["Manrope"],
+            "headline-lg": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "headline-xl-mobile": ["Manrope"]
+          },
+          "fontSize": {
+            "body-md": [
+              "1rem",
+              {
+                "lineHeight": "1.625rem",
+                "letterSpacing": "-0.005em",
+                "fontWeight": "400"
+              }
+            ],
+            "eyebrow": [
+              "0.75rem",
+              {
+                "lineHeight": "1rem",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "1.125rem",
+              {
+                "lineHeight": "1.75rem",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "1.75rem",
+              {
+                "lineHeight": "2.25rem",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "0.875rem",
+              {
+                "lineHeight": "1.25rem",
+                "letterSpacing": "0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-xl": [
+              "3.5rem",
+              {
+                "lineHeight": "4rem",
+                "letterSpacing": "-0.025em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "1.75rem",
+              {
+                "lineHeight": "2.25rem",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-sm": [
+              "0.75rem",
+              {
+                "lineHeight": "1rem",
+                "letterSpacing": "0.02em",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-sm": [
+              "1.25rem",
+              {
+                "lineHeight": "1.75rem",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "2.5rem",
+              {
+                "lineHeight": "3rem",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "0.875rem",
+              {
+                "lineHeight": "1.375rem",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl-mobile": [
+              "2.25rem",
+              {
+                "lineHeight": "2.75rem",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Soft ambient elevation shadows */
+    .shadow-level-2 {
+      box-shadow: 0 2px 4px -1px rgba(32, 49, 47, 0.03), 0 8px 24px -4px rgba(32, 49, 47, 0.05);
+    }
+    .shadow-ambient-card {
+      box-shadow: 0 4px 20px -2px rgba(18, 107, 100, 0.06);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col pb-20">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<!-- Note: Shell Border Ban implemented via background tonal separation & subtle elevation -->
+<header class="fixed top-0 left-0 w-full z-40 flex justify-between items-center px-gutter-mobile h-16 bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<!-- Back Navigation Action -->
+<button aria-label="Go Back" class="p-2 rounded-xl text-primary hover:bg-surface-container transition-colors duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_back">arrow_back</span>
+</button>
+<a class="text-headline-sm font-headline-sm text-primary font-semibold tracking-tight" href="#">
+        Aura Dental
+      </a>
+</div>
+<div class="flex items-center gap-2">
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-xl text-label-md font-label-md hover:bg-primary-container active:scale-98 transition-all duration-150">
+        Book
+      </button>
+</div>
+</header>
+<!-- Canvas Padding for fixed header -->
+<div class="h-16 w-full"></div>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-lg mx-auto px-margin-mobile pt-4 space-y-6">
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<a class="hover:text-primary transition-colors duration-150 flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant" data-icon="chevron_right">chevron_right</span>
+<span aria-current="page" class="text-primary font-medium">Contact &amp; Emergency Care</span>
+</nav>
+<!-- Page Title & Sanctuary Subtitle -->
+<div class="space-y-1">
+<p class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Connect with our Sanctuary</p>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-semibold tracking-tight">
+        Contact &amp; Emergency Care
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        We are here to support your holistic oral well-being with immediate dental triage, seamless scheduling, and calm arrival assistance.
+      </p>
+</div>
+<!-- ================= 3. URGENT CARE BANNER / EMERGENCY PROTOCOL ================= -->
+<section class="rounded-2xl p-5 bg-tertiary-fixed text-on-surface border border-tertiary/20 shadow-level-2 relative overflow-hidden space-y-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined" data-icon="e911_emergency" style="font-variation-settings: 'FILL' 1;">e911_emergency</span>
+</div>
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container/10 border border-tertiary-container/20 text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+            Priority On-Call Dental Care
+          </div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Severe Pain or Dental Trauma?
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Experiencing severe pain or dental trauma? Call our on-call dental line immediately.
+          </p>
+</div>
+</div>
+<!-- Action Triage Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+<!-- Direct Telephone CTA -->
+<a class="flex items-center justify-center gap-2 px-4 py-3 bg-tertiary text-on-tertiary rounded-xl font-label-md text-label-md shadow-sm hover:opacity-95 active:scale-98 transition-all" href="tel:5552345678">
+<span class="material-symbols-outlined" data-icon="phone_in_talk">phone_in_talk</span>
+<span>(555) 234-5678</span>
+</a>
+<!-- WhatsApp Emergency Triage Button -->
+<a class="flex items-center justify-center gap-2 px-4 py-3 bg-surface-container-lowest text-primary border border-primary/20 rounded-xl font-label-md text-label-md shadow-sm hover:bg-surface-container-low active:scale-98 transition-all" href="https://wa.me/5552345678" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary" data-icon="chat">chat</span>
+<span>WhatsApp Emergency Triage</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified_user">verified_user</span>
+<span>Direct consultation with an on-duty clinician within 15 minutes.</span>
+</p>
+</section>
+<!-- ================= 4. STUDIO DETAILS & OPENING HOURS ================= -->
+<section class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/50 shadow-level-2 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Opening Hours</h2>
+<p class="font-label-sm text-label-sm text-secondary">Mindful &amp; prompt scheduling</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-primary text-label-sm font-label-sm border border-primary/10">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          Open Today
+        </span>
+</div>
+<!-- Schedule Timetable Array -->
+<div class="space-y-2.5 text-body-sm font-body-sm divide-y divide-outline-variant/30">
+<!-- Weekdays -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<span class="text-on-surface font-semibold">Monday – Friday</span>
+</div>
+<span class="text-on-surface-variant font-medium">8:00 AM – 6:30 PM</span>
+</div>
+<!-- Saturday -->
+<div class="flex items-center justify-between pt-2.5">
+<div class="flex items-center gap-2">
+<span class="text-on-surface font-semibold">Saturday</span>
+</div>
+<span class="text-on-surface-variant font-medium">9:00 AM – 2:00 PM</span>
+</div>
+<!-- Sunday -->
+<div class="flex items-center justify-between pt-2.5">
+<div class="flex items-center gap-2">
+<span class="text-on-surface font-semibold">Sunday</span>
+</div>
+<div class="text-right">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/60 text-secondary font-label-sm text-label-sm">
+              Closed
+            </span>
+<span class="block text-[11px] text-tertiary font-medium">Emergency On-Call Support</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 5. PHYSICAL LOCATION & ARRIVAL GUIDE ================= -->
+<section class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/50 shadow-level-2 space-y-4">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Location &amp; Arrival</h2>
+<p class="font-label-sm text-label-sm text-secondary">Our calming studio suite</p>
+</div>
+</div>
+<!-- Address Box -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-start justify-between gap-3">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Aura Dental Studio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">452 Mindful Way, Suite 300</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Metro City, MC 98210</p>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-secondary hover:text-primary transition-colors border border-outline-variant/40 active:scale-95" onclick="navigator.clipboard?.writeText('452 Mindful Way, Suite 300, Metro City, MC 98210')" title="Copy Address">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<!-- Parking & Transit Details -->
+<div class="space-y-3 pt-1">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="local_parking">local_parking</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Covered Structure &amp; Validation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Convenient covered parking structure with direct elevator access to Suite 300. Full parking validation is provided at our reception desk.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="directions_transit">directions_transit</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Public Transit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Located 1.5 blocks south from the Central Metro Transit Hub (Subway Lines M1, M3, and Bus Routes 12 &amp; 44).</p>
+</div>
+</div>
+</div>
+<!-- Interactive Styled Map Card -->
+<div class="relative rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container-high group">
+<!-- Map Visual Representation -->
+<div class="w-full h-44 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="An architectural aerial map rendering of a quiet urban medical center sanctuary with tree-lined pedestrian streets in soft mint and sage green tones, natural morning sunlight, clean roads, and modern aesthetic buildings matching a high-end wellness district." data-location="Metro City" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-15NoWKr5j_iuKajn23Mb3A1gAEM-Bmm4pojPZeQjCUm_FbTUJh7kTDydFcJIUwccS5EalsMrPcWVJDjTxQvQtS3CNNih2AvwPxHLbCiCUPgGogljpS3xYZvhgknbDPN2JR8-kFk7g7Sp6MfkwJ1c7fY6Z_qa8RMy8G97f-jcezdYQ8X3oomv53s7GGBM0nziRIYVCFEkCUG5GHV0qtxLpsW0lEvHZ-fqwjpHDOPlPcXBqEpL5MQD')">
+</div>
+<!-- Location Pin Overlay Bubble -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent flex flex-col justify-end p-4">
+<div class="flex items-center justify-between text-on-primary">
+<div>
+<p class="text-label-md font-label-md font-semibold text-surface-container-lowest">Aura Dental Pavilion</p>
+<p class="text-label-sm font-label-sm text-secondary-container">Suite 300 • Direct Elevator Access</p>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm shadow hover:bg-primary-container transition-all active:scale-95" href="https://maps.google.com/?q=452+Mindful+Way+Metro+City" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]" data-icon="near_me">near_me</span>
+<span>Get Directions</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Direct Google Maps Action Link -->
+<a class="w-full py-2.5 px-4 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors duration-200" href="https://maps.google.com/?q=452+Mindful+Way+Metro+City" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span>Get Driving Directions via Google Maps</span>
+</a>
+</section>
+<!-- ================= 7. CONTACT OPTIONS SUMMARY ================= -->
+<section class="space-y-3">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Immediate Channels</h2>
+<div class="grid grid-cols-2 gap-3">
+<!-- Phone -->
+<a class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all" href="tel:5552345678">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+</div>
+<div>
+<p class="font-eyebrow text-[10px] text-secondary uppercase tracking-wider">Direct Voice</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">(555) 234-5678</p>
+</div>
+</a>
+<!-- WhatsApp -->
+<a class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all" href="https://wa.me/5552345678" rel="noopener noreferrer" target="_blank">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="forum">forum</span>
+</div>
+<div>
+<p class="font-eyebrow text-[10px] text-secondary uppercase tracking-wider">Fast Chat</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">WhatsApp Care</p>
+</div>
+</a>
+<!-- Email -->
+<a class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all" href="mailto:care@auradental.com">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-eyebrow text-[10px] text-secondary uppercase tracking-wider">Email Concierge</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">care@auradental.com</p>
+</div>
+</a>
+<!-- Patient Portal -->
+<a class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all" href="#portal">
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="lock">lock</span>
+</div>
+<div>
+<p class="font-eyebrow text-[10px] text-secondary uppercase tracking-wider">Encrypted</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Patient Portal</p>
+</div>
+</a>
+</div>
+</section>
+<!-- ================= 6. DIRECT ENQUIRY & MESSAGE FORM ================= -->
+<section class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/50 shadow-level-2 space-y-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Direct Enquiry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">General questions, accessibility accommodation, or medical record transfers.</p>
+</div>
+<form class="space-y-3.5" onsubmit="event.preventDefault(); alert('Your message has been sent to the Aura Dental care coordinator. We will reply within 2 business hours.');">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="fullName">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/10 transition-all outline-none" id="fullName" placeholder="Eleanor Vance" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="email">Email Address</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/10 transition-all outline-none" id="email" placeholder="eleanor@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="phone">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/10 transition-all outline-none" id="phone" placeholder="(555) 000-0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="inquiryType">Inquiry Purpose</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-3.5 py-2.5 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary/10 transition-all outline-none" id="inquiryType">
+<option>General Question &amp; Consultation</option>
+<option>Accessibility &amp; Sensory Accommodation</option>
+<option>Dental Records &amp; X-Ray Transfer</option>
+<option>Insurance Pre-authorization</option>
+<option>Sedation Dentistry Guidance</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1" for="message">Your Message</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/10 transition-all outline-none resize-none" id="message" placeholder="Share details on your concerns or accessibility requirements..." required="" rows="3"></textarea>
+</div>
+<!-- Privacy Assurance -->
+<div class="flex items-center gap-2 pt-1">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary border-outline-variant cursor-pointer" id="consent" required="" type="checkbox"/>
+<label class="text-label-sm font-label-sm text-on-surface-variant cursor-pointer" for="consent">
+            I agree to the secure handling of my inquiry per the Privacy Policy.
+          </label>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 px-5 rounded-xl font-label-md text-label-md font-semibold hover:bg-primary-container active:scale-98 transition-all duration-150 flex items-center justify-center gap-2 shadow-sm" type="submit">
+<span>Send Secure Message</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+</button>
+</form>
+</section>
+<!-- Clinic Ambience / Peace of Mind Card -->
+<div class="rounded-2xl overflow-hidden bg-primary text-on-primary p-5 relative">
+<div class="space-y-2 relative z-10">
+<span class="px-2 py-0.5 rounded-full bg-white/20 text-on-primary text-[11px] font-label-sm uppercase tracking-wider">Calm Sanctuary Promise</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-semibold">Anxiety-Free Dentistry</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+          Acoustic dampening, warm herbal teas, tailored weighted blankets, and zero clinical odor. From the moment you step out of the elevator, your comfort is prioritized.
+        </p>
+</div>
+</div>
+</main>
+<!-- ================= COMPREHENSIVE FOOTER (Shared Component Anchor) ================= -->
+<!-- Note: Shell Border Ban implemented via tonal elevation shift -->
+<footer class="mt-12 bg-surface-container text-on-surface-variant w-full shadow-inner">
+<div class="w-full py-8 px-gutter-mobile flex flex-col gap-4 max-w-7xl mx-auto">
+<div class="space-y-1">
+<p class="text-headline-sm font-headline-sm text-primary font-semibold tracking-tight">Aura Dental Studio</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">© 2024 Aura Dental Studio. All rights reserved. Gentle &amp; Mindful Dentistry.</p>
+</div>
+<!-- Links defined in JSON: Emergency Care, Consultation Policy, Insurance & Billing, Privacy Policy, Directions -->
+<nav class="flex flex-wrap gap-x-4 gap-y-2 text-label-sm font-label-sm pt-2">
+<a class="text-primary font-medium hover:text-primary transition-colors duration-200" href="#">Emergency Care</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Consultation Policy</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Insurance &amp; Billing</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Directions</a>
+</nav>
+</div>
+</footer>
+<!-- ================= FIXED BOTTOM NAV BAR (Shared Component Anchor) ================= -->
+<!-- 
+    Mobile destination nav shell with 4 tabs: ["Home", "Treatments", "Call", "Book"]
+    Active mapping: On a Contact/Emergency screen with urgent assistance, "Call" is contextually active.
+    Border ban respected: No border-t, tonal separation and shadow-md applied per design system.
+  -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-gutter-mobile bg-surface-container-lowest shadow-md">
+<!-- Home Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<!-- Treatments Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="dentistry">dentistry</span>
+<span class="text-label-sm font-label-sm">Treatments</span>
+</a>
+<!-- Call Tab (Active contextual lock for Contact/Hours/Emergency screen) -->
+<a class="flex flex-col items-center justify-center text-primary font-semibold py-1 hover:text-primary active:scale-95 transition-transform duration-150" href="tel:5552345678">
+<span class="material-symbols-outlined" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="text-label-sm font-label-sm font-semibold">Call</span>
+</a>
+<!-- Book Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary active:scale-95 transition-transform duration-150" href="#book">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Book</span>
+</a>
+</nav>
+</body></html>

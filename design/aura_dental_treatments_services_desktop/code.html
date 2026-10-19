@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Dental Studio | Treatments &amp; Services</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#eafdfa",
+            "inverse-primary": "#87d4cb",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#d3e7e3",
+            "surface-tint": "#0f6a63",
+            "on-tertiary-fixed": "#321200",
+            "on-secondary-fixed": "#00201e",
+            "tertiary": "#6a3d20",
+            "primary-container": "#126b64",
+            "on-secondary-fixed-variant": "#284d4a",
+            "on-primary-container": "#9be9df",
+            "on-tertiary-container": "#ffd1b8",
+            "background": "#eafdfa",
+            "on-tertiary-fixed-variant": "#683c1f",
+            "on-secondary": "#ffffff",
+            "primary": "#00514c",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#00504a",
+            "on-surface": "#0d1e1d",
+            "primary-fixed-dim": "#87d4cb",
+            "secondary-container": "#c0e8e3",
+            "tertiary-fixed-dim": "#f9b892",
+            "surface-variant": "#d3e7e3",
+            "surface": "#eafdfa",
+            "on-primary-fixed": "#00201d",
+            "primary-fixed": "#a3f1e7",
+            "error": "#ba1a1a",
+            "surface-container-low": "#e4f8f4",
+            "inverse-surface": "#233432",
+            "outline": "#6f7977",
+            "on-secondary-container": "#446966",
+            "secondary": "#406561",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#855435",
+            "inverse-on-surface": "#e1f5f1",
+            "secondary-fixed": "#c3eae6",
+            "tertiary-fixed": "#ffdbc8",
+            "on-error": "#ffffff",
+            "surface-container-high": "#d9ece9",
+            "on-background": "#0d1e1d",
+            "surface-container": "#def2ee",
+            "secondary-fixed-dim": "#a7ceca",
+            "outline-variant": "#bec9c6",
+            "on-surface-variant": "#3f4947",
+            "error-container": "#ffdad6",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#cbdedb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1.25rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "label-md": ["Manrope"],
+            "headline-sm": ["Manrope"],
+            "eyebrow": ["Manrope"],
+            "headline-xl": ["Manrope"],
+            "headline-xl-mobile": ["Manrope"],
+            "body-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "headline-md": ["Manrope"],
+            "headline-lg-mobile": ["Manrope"]
+          },
+          "fontSize": {
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "eyebrow": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-xl": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- Micro Announcement Bar -->
+<aside aria-label="Announcement" class="bg-primary text-on-primary py-2 px-margin text-center font-label-sm text-label-sm flex items-center justify-center space-x-2">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span>Now accepting select private biological dental insurances and health savings accounts (HSA / FSA).</span>
+<a class="underline font-semibold ml-2 text-primary-fixed hover:text-on-primary transition-colors" href="#contact">Verify Coverage →</a>
+</aside>
+<!-- TopNavBar (Shared Component JSON Blueprint) -->
+<header class="bg-surface-container-lowest/90 backdrop-blur-md dark:bg-surface-container/90 docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none border-b border-outline-variant/40 dark:border-outline-variant/20 transition-all duration-200">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-gutter space-x-space-md w-full h-20">
+<!-- Brand Logo Anchor -->
+<a class="text-headline-sm font-headline-sm font-semibold tracking-tight text-primary dark:text-inverse-primary flex items-center space-x-2.5" href="#">
+<span class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xl" data-icon="dentistry">dentistry</span>
+</span>
+<span class="tracking-tight">Aura Dental Studio</span>
+</a>
+<!-- Navigation Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary transition-colors duration-200 text-label-md font-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary transition-colors duration-200 text-label-md font-label-md" href="#">About</a>
+<!-- Active Nav Lock: Treatments -->
+<a aria-current="page" class="text-primary dark:text-inverse-primary font-semibold border-b-2 border-primary dark:border-inverse-primary pb-1 text-label-md font-label-md" href="#">Treatments</a>
+<a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary transition-colors duration-200 text-label-md font-label-md" href="#">Our Dentist</a>
+<a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary transition-colors duration-200 text-label-md font-label-md" href="#">Patient Info</a>
+<a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary transition-colors duration-200 text-label-md font-label-md" href="#">Contact</a>
+</nav>
+<!-- Trailing CTAs -->
+<div class="flex items-center space-x-4">
+<a class="hidden lg:flex items-center space-x-1.5 text-secondary hover:text-primary transition-colors duration-150 text-label-md font-label-md" href="tel:+18005552872">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+<span>Call Clinic</span>
+</a>
+<button class="bg-primary-container hover:bg-primary text-on-primary px-5 py-2.5 rounded-xl text-label-md font-label-md transition-all duration-200 ease-in-out active:scale-95 shadow-sm hover:shadow flex items-center space-x-2">
+<span>Book Appointment</span>
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-gutter pt-12 pb-16">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-outline font-label-sm text-label-sm mb-6">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-semibold">Treatments &amp; Services</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8">
+<p class="font-eyebrow text-eyebrow text-primary uppercase tracking-widest mb-3">EVIDENCE-BASED RESTORATIVE &amp; AESTHETIC CARE</p>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight max-w-4xl">
+            Dental Treatments Designed Around Comfort, Longevity &amp; Biology
+          </h1>
+</div>
+<div class="lg:col-span-4 pb-2">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            We reject fear-driven dentistry and cold clinical sterility. Every procedure integrates minimally invasive biomimetic protocols, zero-pain computerized anesthesia, and upfront fee transparency.
+          </p>
+</div>
+</div>
+<!-- Quick Trust Indicators Banner -->
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-surface-container-lowest border border-outline-variant/40 rounded-2xl shadow-sm">
+<div class="flex items-center space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Biomimetic Philosophy</div>
+<div class="font-body-sm text-body-sm text-outline">Conserving natural tooth enamel</div>
+</div>
+</div>
+<div class="flex items-center space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="syringe">syringe</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">The Wand® Anesthesia</div>
+<div class="font-body-sm text-body-sm text-outline">Painless computerized delivery</div>
+</div>
+</div>
+<div class="flex items-center space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Sensory Comfort Suites</div>
+<div class="font-body-sm text-body-sm text-outline">Acoustic dampening &amp; calm visual lines</div>
+</div>
+</div>
+<div class="flex items-center space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Transparent Upfront Fees</div>
+<div class="font-body-sm text-body-sm text-outline">Zero hidden procedural surcharges</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Pills / Categories Navigation -->
+<section class="max-w-7xl mx-auto px-gutter mb-12">
+<div class="flex items-center space-x-3 overflow-x-auto pb-2 scrollbar-none" id="treatment-filters">
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-sm" data-filter="all">
+          All Treatments
+        </button>
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/40" data-filter="preventive">
+          Preventive Care
+        </button>
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/40" data-filter="restorative">
+          Restorative &amp; Biomimetic
+        </button>
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/40" data-filter="cosmetic">
+          Cosmetic Harmony
+        </button>
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/40" data-filter="ortho">
+          Orthodontics &amp; Aligners
+        </button>
+<button class="filter-tab px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high border border-outline-variant/40" data-filter="pediatric">
+          Pediatric &amp; Family
+        </button>
+</div>
+</section>
+<!-- Treatment Cards Grid (2-column on desktop, responsive) -->
+<section class="max-w-7xl mx-auto px-gutter mb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="treatment-grid">
+<!-- Card 1: Preventive Care -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="preventive">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An ethereal high-end biological dental hygiene suite featuring soft sage and warm oak architectural finishes, clean morning sunlight casting delicate shadows, and precision ultrasonic equipment in pure white without clutter. The atmosphere is serene, clinical yet luxuriously tranquil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEIADNVFUqjSC9zl2WO-rLDUh8xurDf0cjzw4FK3OvomKNdOn5c4MrC87nRvfR-omHIzorE_IdrK8XSkah6uBkPOO607SBaWBIIyimRTgxSMq7Cek0fxz-jlu4zMSGXdaX50_scBnAm8vXqD09ju-9837u5M1eTDritM5ZUQGzX1EGOOpqm4v8m57A4c1_BcwqOeIst74P8Z7OnpKwVIzP1GvyoGKFfT7Wpt4ZMB_9WTikFSdZcE-S"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="cleaning_services">cleaning_services</span>
+<span>Preventive Protocol</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $180 – $290
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                60 mins
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="verified_user">verified_user</span>
+                Gentle Non-Invasive
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Routine Hygiene &amp; Enamel Remineralization
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              A serene, scraping-free dental cleaning experience using Swiss AIRFLOW® micro-glycine powder and guided biofilm therapy to protect cementum and restore active remineralization.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Ultrasonic vibration-free piezoelectric scaling without enamel scratching</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Warm micro-glycine air-polishing targeting deep stubborn tea &amp; coffee tannins</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Bioactive mineral varnish Infusion for immediate sensitivity relief</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Code: D1110 / D1206</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>Reserve Session</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Orthodontics & Aligners -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="ortho">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A modern dentist desk featuring transparent ultra-clear orthodontic aligners displayed inside a bespoke matte ceramic tray next to a sleek digital tablet displaying 3D dental biomechanics. The environment is warm, minimal, flooded with natural diffused architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0OnHWwzjb1KbvTRxOTzS32sziM9EwEZLLZX8pv2Rwu3SxBds9HpvTVbC5y7u829mOC6NtqPYjUwl-cTtsblcu5ZgV3CodGPo_WVK0sKc5TqRVmsdIC-5bGXP3tXtGxQQehFD8kGqUHAWaUxfk_UdqZ2eQPgcjMHI73kZDrEtZCLELnHzTqeeCvcLtGZTE3yeKsRw9Ll5G3AQWA-4-7xMW5lr_RAzEnc-oW4n5ALPJltS0YqTKy8K1"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="view_in_ar">view_in_ar</span>
+<span>Clear Orthodontics</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $3,200 – $5,800
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                6 – 14 months
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="psychology">psychology</span>
+                Digital Simulation
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Clear Aligners &amp; Gentle Orthodontics
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              Discreet orthodontic re-alignment without metal brackets. We calibrate biological tooth movement to preserve jaw joint harmony and facial symmetry.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Radiation-free 3D optical intraoral scans (zero gagging putty impressions)</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Predictive biomechanical simulation previewing your finish in 4K resolution</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Complimentary custom overnight retainers &amp; enamel remineralization kit</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Payment plans from $149/mo</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>View Treatment Plan</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Restorative & Biomimetic -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="restorative">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An ergonomic dental surgical microscope focused on a high-precision medical procedure mockup inside a clean tranquil clinical treatment suite. Muted teal accents, matte metallic instruments, and clean architectural lighting emphasize micro-precision and quiet medical excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3j9ACQ-ngnGW2IFrrw8uKBKuesBNU40PfvQ93fQRjO30wFngm05Zsnx-bOPA1VLc3n7IxFQft9RxjMvaUJSUTPZbi-IO-YA_c_DAlfxSGXloPPCrCn0kSmUg4ftnBehzZLv-R1XWpKdcN7tH0ZzTB0R-oCm0JWgu1S-P2dpt39O4uo4YJWBov74cILnHzgPvQs-xRr2t0drMz14pYIS2EHLoMsqXvnb0Eb5TUtIMq8Txkqk8V5X5v"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="biotech">biotech</span>
+<span>Microscopic Endodontics</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $950 – $1,600
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                Single-visit (90m)
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="bolt">bolt</span>
+                Computerized Wand®
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Minimally Invasive Endodontics / Root Canals
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              Modern root canal therapy completely free of pain. Utilizing surgical operating microscopes and gentle acoustic fluid dynamics to cleanse root canals while saving native structure.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>The Wand® computerized anesthesia: comfortable, pinpoint target delivery</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>High-frequency acoustic irrigation eliminates bacterial biofilms safely</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Immediate biomimetic resin composite seal to prevent micro-leakage</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Emergency appointments prioritized</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>Explore Procedure</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Cosmetic Harmony -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="cosmetic">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An artisanal master dental ceramist handcrafting layered feldspathic porcelain veneers under daylight balanced lamps. Ceramic brushes, delicate translucent tooth shells, and fine instruments reflect bespoke craftsmanship in an upscale minimalist restorative studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5hgGVzU73agjXRZyJqIiN_E-L0nzXp7rxwgEtaXlNCMUr0ehlfyw2KHbu4CiZQLBH0Dn62LzUYdsIWfvC1I8MJYJCyNsTRxeJCvGpLBV_t71D4iAf0HLyDNalkWddysH-1k3lDjgsGsC_ab0loszQFkr6-nQV_4EToLPs5traHNUo07Zfh2CDRFxJ8WbUF5qlOVFfHoL0pYLYBJmkRygV6eeNDy-185XLLtjtZvdZ1_BN8RBpZRv8"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span>Aesthetic Restoration</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $1,100 – $2,100 / tooth
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                Custom Craft (2 visits)
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="palette">palette</span>
+                Layered Ceramic
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Porcelain Veneers &amp; Aesthetic Harmonization
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              Handcrafted ultra-thin ceramic veneers engineered with natural optical translucency. Designed to respect the organic lip curvature and speech dynamics.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Intraoral physical trial smile mockup (test-drive your smile before prep)</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Micro-preparation protocol preserving over 90% of your natural enamel</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Custom master ceramist shade-matching session under true daylight</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Digital smile design included</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>View Smile Gallery</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Dental Implants -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="restorative">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean architectural medical consultation space showing a ceramic zirconia dental implant model on a pale marble plinth alongside a high-resolution 3D CBCT digital screen. The composition is calm, scientific, elegant, with soft natural greens and timber accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsKy8Z_iPJ3AosCWcTAhZWsCOleUihdA5k1kuKtPEFx_VClDPLudyjSpk7_nvJPVty3BppMEzxZSzra-L_bxcCdXkHNjwE4u-XiMcbUcHIWOTZ6dg2WdcCTWqlOQPqGJuJtVmYVoYazlYNWfzcSbFDFlO9EetBddxNn2ZZSVTAiqmdFJAIPlIQJfhJ1GODMlBN8dCLgjGQt__ER9xIz5z5xT-SjLETMSTJb3t9kPhA0bKGn-JAZkKd"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span>Biocompatible Implantology</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $2,400 – $4,200
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                Guided Placement
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="health_and_safety">health_and_safety</span>
+                100% Metal-Free Option
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Dental Implants &amp; Biocompatible Restorations
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              Restoring lost teeth with ceramic zirconia or titanium fixtures mapped via 3D CBCT digital navigation. Designed for biological tissue integration and life-long bite stability.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Low-dose 3D CBCT bone mapping &amp; digitally printed surgical guides</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Ceramic non-metallic zirconia implant options for hypoallergenic security</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Platelet-rich fibrin (PRF) biological healing acceleration from your own blood</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Structural lifetime guarantee</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>Consult Implantologist</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 6: Pediatric & Family -->
+<article class="treatment-card group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between" data-category="pediatric">
+<div>
+<div class="relative h-64 w-full rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A warm, light-filled pediatric dental room featuring pastel wood furniture, an inviting ergonomic treatment chair, calm interactive tactile books, and no intimidating equipment in sight. Soft natural ambient lighting fosters a cheerful, safe atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzzJR82ZiiW4-BGVqvuS86VPwA9vyQ7dTAhKFldk-2u3wfpBSKCfzuHowzRG7t2vXeRZI3kJIssgmMDBJjCh5JsXPMgZkM0uL_z_vSM2qjwn2UOYRHBy3TjG-NvWVyZhDZHw5i_M3IQUs_RBiWTWtKvyvMN3ke-_05OXmKNujIy2Bz5yzgY7MeP9edwvONY1lMmbBnpnLn7Ap6ncCBbLbWc-_Nw6vU0mKszEz-SNhzxvRqW4lk-KH7"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-primary font-semibold flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="family_restroom">family_restroom</span>
+<span>Pediatric &amp; Family</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface font-semibold">
+                $140 – $260
+              </div>
+</div>
+<div class="flex items-center space-x-4 mb-2">
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="schedule">schedule</span>
+                Gentle Pacing (45m)
+              </span>
+<span class="inline-flex items-center text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base mr-1" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+                Fear-Free Guarantee
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2.5">
+              Gentle Pediatric &amp; Sensory Dentistry
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+              Instilling lifelong oral confidence through respectful, compassionate care. Our sensory-adapted treatment protocols are designed especially for children, teens, and adults with dental phobias.
+            </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Gentle Tell-Show-Do pacing: zero restraint, zero pressure, sensory-adapted</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>BPA-free clear fissure sealants for prolonged decay defense</span>
+</div>
+<div class="flex items-start space-x-2 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base mt-0.5" data-icon="check_circle">check_circle</span>
+<span>Silver Diamine Fluoride (SDF) non-invasive cavity arresting without drills</span>
+</div>
+</div>
+</div>
+<div class="pt-5 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">First visits welcomed warmly</span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center space-x-1 group/btn">
+<span>Book Child Visit</span>
+<span class="material-symbols-outlined text-base transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- The Sensory & Technology Difference (Editorial Comparison Section) -->
+<section class="bg-surface-container-low py-space-xl border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<p class="font-eyebrow text-eyebrow text-primary uppercase tracking-wider mb-3">CLINICAL EXCELLENCE IN REPOSE</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-4">
+            The Sensory &amp; Technology Difference
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Traditional dental clinics often overwhelm senses with shrill drills, cold metallic odors, and intimidating syringes. We engineered an architectural sanctuary around biology and nervous system calm.
+          </p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-sm overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-outline-variant/30 bg-surface-container-high/40 text-on-surface font-label-md text-label-md">
+<div class="p-6 md:col-span-4 font-semibold text-primary">Sensory / Clinical Dimension</div>
+<div class="p-6 md:col-span-4 text-outline border-t md:border-t-0 md:border-l border-outline-variant/30">Conventional Dental Clinic</div>
+<div class="p-6 md:col-span-4 text-primary font-semibold border-t md:border-t-0 md:border-l border-outline-variant/30 bg-surface-container-low/60 flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-base" data-icon="verified">verified</span>
+<span>The Aura Studio Standard</span>
+</div>
+</div>
+<!-- Row 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-outline-variant/20 hover:bg-surface/50 transition-colors">
+<div class="p-6 md:col-span-4 flex items-center space-x-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base" data-icon="syringe">syringe</span>
+</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Local Numbing Protocol</div>
+<div class="text-outline text-body-sm font-body-sm">Pain perception during injection</div>
+</div>
+</div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-on-surface-variant border-t md:border-t-0 md:border-l border-outline-variant/20 flex items-center">
+              Manual high-pressure syringe needle causing painful tissue distension and residual lip numbness for 4+ hours.
+            </div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-primary font-medium border-t md:border-t-0 md:border-l border-outline-variant/20 bg-surface-container-low/30 flex items-center">
+              The Wand® computer-controlled local delivery beneath pain-receptor thresholds. Pinpoint tooth numbness without facial paralysis.
+            </div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-outline-variant/20 hover:bg-surface/50 transition-colors">
+<div class="p-6 md:col-span-4 flex items-center space-x-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base" data-icon="3d_rotation">3d_rotation</span>
+</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Impression Taking</div>
+<div class="text-outline text-body-sm font-body-sm">Restoration accuracy &amp; comfort</div>
+</div>
+</div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-on-surface-variant border-t md:border-t-0 md:border-l border-outline-variant/20 flex items-center">
+              Uncomfortable chemical goop trays triggering the pharyngeal gag reflex with potential structural dimensional distortion.
+            </div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-primary font-medium border-t md:border-t-0 md:border-l border-outline-variant/20 bg-surface-container-low/30 flex items-center">
+              Non-invasive 3D optical video wand capturing 6,000 sub-millimeter frames per second with instant color accuracy.
+            </div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-1 md:grid-cols-12 border-b border-outline-variant/20 hover:bg-surface/50 transition-colors">
+<div class="p-6 md:col-span-4 flex items-center space-x-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base" data-icon="headphones">headphones</span>
+</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Auditory &amp; Ambient Setting</div>
+<div class="text-outline text-body-sm font-body-sm">Acoustic stress management</div>
+</div>
+</div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-on-surface-variant border-t md:border-t-0 md:border-l border-outline-variant/20 flex items-center">
+              Shrill high-pitched air turbines echoing off cold linoleum and bright, blinding fluorescent surgical overhead spotlights.
+            </div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-primary font-medium border-t md:border-t-0 md:border-l border-outline-variant/20 bg-surface-container-low/30 flex items-center">
+              Bose QuietComfort® noise-canceling headsets, whisper-quiet electric speed-increasing handpieces, and circadian daylight therapy.
+            </div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-1 md:grid-cols-12 hover:bg-surface/50 transition-colors">
+<div class="p-6 md:col-span-4 flex items-center space-x-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base" data-icon="receipt_long">receipt_long</span>
+</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Financial Transparency</div>
+<div class="text-outline text-body-sm font-body-sm">Clarity of estimates &amp; billing</div>
+</div>
+</div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-on-surface-variant border-t md:border-t-0 md:border-l border-outline-variant/20 flex items-center">
+              Confusing billing codes mailed weeks later with surprise diagnostic add-on facility fees and disputed coverage.
+            </div>
+<div class="p-6 md:col-span-4 text-body-md font-body-md text-primary font-medium border-t md:border-t-0 md:border-l border-outline-variant/20 bg-surface-container-low/30 flex items-center">
+              Written itemized plan before any treatment begins. Real-time digital insurance pre-authorization with 0% interest monthly terms.
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clinical FAQs Accordion Section -->
+<section class="max-w-4xl mx-auto px-gutter py-space-xl">
+<div class="text-center mb-12">
+<p class="font-eyebrow text-eyebrow text-primary uppercase tracking-wider mb-2">CLINICAL TRANSPARENCY</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-3">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Clear answers regarding appointments, insurance coordination, and biological treatment longevity.</p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 transition-all duration-200 open:shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>What makes 'Biomimetic' dentistry fundamentally different from conventional fillings?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Conventional dental restorations often grind away substantial amounts of healthy tooth structure to create mechanical retention locks for rigid amalgam or large crowns. Biomimetic dentistry mimics nature: we use ultra-fine adhesive micro-layering and stress-reduced composite formulations that expand, flex, and seal exactly like natural dentin and enamel, preserving up to 80% more of your natural tooth and preventing catastrophic structural fractures.
+          </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 transition-all duration-200 open:shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>How does the Wand® computerized anesthesia system work?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            The Wand® replaces the traditional, frightening metallic syringe with an ergonomic, featherlight pen-like handpiece. A microprocessor regulates the flow rate and pressure of the anesthetic at the cellular absorption rate—below the human pain threshold. Because the flow creates a pathway of numbness ahead of the needle tip, 98% of patients report feeling absolutely no sting or pressure sensation whatsoever.
+          </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 transition-all duration-200 open:shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>Do you accept my dental insurance, and what if I am out-of-network?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            We are an out-of-network direct provider for most PPO plans, which allows Dr. Rostova to dedicate genuine 60-to-90 minute appointments rather than rushing patients through high-volume quotas. Our patient concierges process all primary insurance claims on your behalf, maximizing your reimbursement checks sent directly to your home. We also provide full HSA / FSA documentation and interest-free split payment plans.
+          </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 transition-all duration-200 open:shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>How long do porcelain veneers and ceramic restorations typically endure?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            When bonded exclusively to natural enamel using our biomimetic isolation protocols, layered feldspathic and lithium disilicate (e.max) veneers routinely demonstrate exceptional longevity exceeding 15 to 20 years. Each case includes a custom-fitted nightguard to cushion against involuntary clenching, backed by our 5-year studio restoration guarantee.
+          </div>
+</details>
+<!-- FAQ Item 5 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 transition-all duration-200 open:shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>I have extreme dental phobia and haven't visited in years. What is my first visit like?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            You are completely safe here. First visits for nervous patients involve zero scraping, zero treatment surprises, and zero guilt. You will sit comfortably in a quiet consultation suite, sip herbal tea, and review non-invasive 3D digital imaging at your pace. You have total agency: you can pause any examination at any second simply by raising a hand.
+          </div>
+</details>
+</div>
+</section>
+<!-- Closing High-Contrast CTA Section -->
+<section class="max-w-7xl mx-auto px-gutter mb-space-xl">
+<div class="relative bg-primary text-on-primary rounded-3xl p-10 md:p-16 overflow-hidden shadow-xl">
+<!-- Subtle architectural gradient overlay -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-96 h-96 rounded-full bg-surface-tint/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8">
+<span class="inline-block px-3 py-1 bg-surface-container-low/20 text-primary-fixed rounded-full text-label-sm font-label-sm uppercase tracking-wider mb-4">
+              NEW PATIENT CONSULTATIONS OPEN
+            </span>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-on-primary mb-4">
+              Begin Your Restorative Journey in Quiet Comfort
+            </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mb-6">
+              Experience oral healthcare without intimidation. Meet Dr. Elena Rostova and discover personalized biological treatments designed for lifelong health and natural aesthetic harmony.
+            </p>
+<div class="flex flex-wrap items-center gap-6 text-on-primary-container font-label-sm text-label-sm">
+<span class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary-fixed text-base" data-icon="check_circle">check_circle</span>
+<span>Direct consultation with Dr. Rostova</span>
+</span>
+<span class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary-fixed text-base" data-icon="check_circle">check_circle</span>
+<span>Zero obligation comprehensive 3D scan</span>
+</span>
+<span class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary-fixed text-base" data-icon="check_circle">check_circle</span>
+<span>Sensory comfort suite preferences logged</span>
+</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col space-y-4">
+<button class="w-full bg-primary-fixed hover:bg-on-primary text-on-primary-fixed px-8 py-4 rounded-xl text-label-md font-label-md font-semibold transition-all duration-200 ease-in-out active:scale-95 text-center shadow-lg hover:shadow-xl">
+              Book Initial Consultation
+            </button>
+<a class="w-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary border border-surface-container-lowest/30 px-8 py-3.5 rounded-xl text-label-md font-label-md transition-all duration-150 text-center flex items-center justify-center space-x-2" href="tel:+18005552872">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+<span>Speak with a Patient Concierge</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component JSON Blueprint) -->
+<footer class="bg-surface-container-low dark:bg-surface-container docked full-width relative border-t border-outline-variant/40 dark:border-outline-variant/20 transition-colors">
+<div class="max-w-7xl mx-auto px-margin py-space-xl grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Col 1: Brand & Bio -->
+<div class="space-y-4">
+<a class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary flex items-center space-x-2" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="dentistry">dentistry</span>
+<span>Aura Dental Studio</span>
+</a>
+<p class="text-on-surface-variant dark:text-outline text-body-sm font-body-sm">
+          A tranquil restorative dental sanctuary dedicated to minimally invasive biomimetic medicine, non-invasive aesthetics, and calm, sensory-conscious patient experiences.
+        </p>
+<div class="text-body-sm font-body-sm text-outline">
+<div>480 Architectural Way, Suite 300</div>
+<div>San Francisco, CA 94107</div>
+<div class="mt-2 text-primary font-medium">hello@auradentalstudio.com</div>
+</div>
+</div>
+<!-- Col 2: Treatments -->
+<div>
+<h3 class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary mb-4 text-base">Treatments</h3>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Preventive Care</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Cosmetic Dentistry</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Orthodontics</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Emergency Care</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Biomimetic Inlays &amp; Onlays</a></li>
+</ul>
+</div>
+<!-- Col 3: Practice & Doctor -->
+<div>
+<h3 class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary mb-4 text-base">Practice Info</h3>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Dr. Elena Rostova</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">About Clinic</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Patient Info</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">The Sensory Promise</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary dark:text-outline dark:hover:text-inverse-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Col 4: Studio Hours & Accreditations -->
+<div class="space-y-4">
+<h3 class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary mb-4 text-base">Studio Hours</h3>
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-1">
+<div class="flex justify-between">
+<span>Monday – Thursday:</span>
+<span class="font-medium text-on-surface">8:00 AM – 5:30 PM</span>
+</div>
+<div class="flex justify-between">
+<span>Friday:</span>
+<span class="font-medium text-on-surface">8:00 AM – 3:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span>Saturday – Sunday:</span>
+<span class="text-outline">Emergency On-Call Only</span>
+</div>
+</div>
+<div class="pt-3 border-t border-outline-variant/30 text-outline text-body-sm font-body-sm">
+<p class="text-xs leading-relaxed">
+            Medical Disclaimer: Content on this site is purely informational and does not constitute individual medical or dental diagnosis.
+          </p>
+</div>
+</div>
+</div>
+<!-- Copyright Sub-Footer Bar -->
+<div class="border-t border-outline-variant/20 py-6 text-center text-body-sm font-body-sm text-outline">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between">
+<p>© 2025 Aura Dental Studio. Founded by Dr. Elena Rostova. All rights reserved.</p>
+<div class="flex items-center space-x-6 mt-4 md:mt-0">
+<span class="flex items-center text-xs text-outline">
+<span class="w-2 h-2 rounded-full bg-primary-fixed inline-block mr-1.5"></span>
+            Member, Academy of Biomimetic Dentistry
+          </span>
+<span class="flex items-center text-xs text-outline">
+<span class="w-2 h-2 rounded-full bg-primary-fixed inline-block mr-1.5"></span>
+            American Academy of Cosmetic Dentistry
+          </span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactive JavaScript for Category Filtering & Interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-tab');
+      const treatmentCards = document.querySelectorAll('.treatment-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          // Update active button classes
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant', 'border', 'border-outline-variant/40');
+          });
+
+          button.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant', 'border', 'border-outline-variant/40');
+          button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          // Filter treatment cards with a subtle fade
+          treatmentCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              card.style.display = 'flex';
+              card.style.opacity = '0';
+              setTimeout(() => {
+                card.style.transition = 'opacity 0.25s ease-in-out';
+                card.style.opacity = '1';
+              }, 10);
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body></html>
